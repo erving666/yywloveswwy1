@@ -4,18 +4,21 @@
 		<meta charset="UTF-8">
 		<title>YYW❤WWY</title>
 		<link rel="stylesheet" type="text/css" href="index.css">
-		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="https://www.layuicdn.com/layui/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="./css/photowall.css" />
+		<script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.12.4/jquery.min.js"></script>
 		<script src="https://www.layuicdn.com/layui/layui.js"></script>
-		<script type="text/javascript" src="canvas_bg.js"></script>
+		<script type="text/javascript" src="./js/canvas_bg.js"></script>
 		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="./js/photowall.js"></script>
 
 	</head>
-	<body>  
+	<body>
+		<audio id="music" preload="auto" src='./music/有何不可.mp3' controls=""></audio>
 		<canvas id="c" ></canvas>
 		<div id="index" >
 			<div class="loveName word_breath">Ervin ❤ Shine</div>
-			<div id="loveTime" class="loveTime">
+			<div id="loveTime" class="loveTime word_breath">
 				<div id="sTime" class="lTime"></div><br />
 				<div id="nTime" class="lTime"></div><br />
 				<div id="dDays" class="lTime"></div><br />
@@ -25,9 +28,11 @@
 		</div>
 		<button class="musicBtn  ">
 	   		<!-- <audio id="music" preload="auto" src='./music/有何不可.mp3' controls=""></audio> -->
-			<audio id="music" preload="auto" src='./music/有何不可.mp3'></audio>
 			<i class="layui-icon layui-icon-headset layui-anim layui-anim-rotate layui-anim-loop" style="font-size: 108px;position: fixed;left: 51px;top: 100px;"></i>
 		</button>
+		<div>
+		</div>
+		<!-- <!-- <button id="load" οnclick="window.location.reload('img.html')">跳转</button> -->
 
 		<!-- <div class="newYear">
 			<br />
@@ -38,8 +43,10 @@
 			<h2 class="endTitle2" style="font-size: 88px;color: red;display: none;">❤❤</h2>
 			<br />
 		</div> -->
+
 		<footer id="author">
 			<p>小宝贝～今天有想我吗</p>
+			<a href="./img.html">查看照片墙</a>
 		</footer>
 	</body>
 </html>

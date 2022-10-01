@@ -1,6 +1,6 @@
-* {
+/* * {
     cursor: pointer;
-}
+} */
 
 body {
     background-color: beige;
@@ -35,7 +35,7 @@ body {
     text-align: center;
     font-family: "楷体","楷体_GB2312";
     font-size: 30px;
-    color: #0f6666;
+    color: rgb(27, 164, 237);
 }
 
 #author {
@@ -57,7 +57,7 @@ body {
     /* height: 30%; */
     font-size: 2.5rem;
     font-weight: 700;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -75,12 +75,10 @@ body {
     from {
         opacity: 0.1;
     }
-
     /* 动画50% 时的不透明度 */
     50% {
         opacity: 1;
     }
-
     /* 动画结束时的不透明度 */
     to {
         opacity: 0.1;
