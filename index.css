@@ -5,7 +5,7 @@
 body {
     background-color: beige;
     width: auto;
-
+    background-color: transparent;
 }
 
 #c {
@@ -35,7 +35,7 @@ body {
     text-align: center;
     font-family: "楷体","楷体_GB2312";
     font-size: 30px;
-    color: #010d0d;
+    color: #0f6666;
 }
 
 #author {
@@ -84,7 +84,6 @@ body {
     /* 动画结束时的不透明度 */
     to {
         opacity: 0.1;
-    }
-
-    
+    } 
 }
+
