@@ -57,9 +57,17 @@ $(function() {
         let iMinutes = (nTime.getTime() - day1) / (1000 * 60); //分钟数
         $("#sTime").html("故事开始于 " + "2022-09-25 21:00:00");
         $("#nTime").html("当前时间: " + formartDate(nTime));
-        $("#dDays").html("相爱 " +"第"+ iDays.toFixed() + "天");
-        $("#dHour").html("相爱 " + iHours.toFixed() + "小时");
-        $("#dMinutes").html("相爱 " + iMinutes.toFixed() + "分钟");
+
+        $("#stop").html("时间仍在流逝，但我们却按下了暂停键")
+
+        $("#dDays").html("相爱 " +"暂时停止在第"+ "24天");
+        // $("#dDays").html("相爱 " +"第"+ iDays.toFixed() + "天");
+
+        $("#dHour").html("相爱 " + "暂时停止在第" + "574小时");
+        // $("#dHour").html("相爱 " + iHours.toFixed() + "小时");
+
+        $("#dMinutes").html("相爱 " + "暂时停止在第" + "34421分钟");
+        // $("#dMinutes").html("相爱 " + iMinutes.toFixed() + "分钟");
         // return iHours
     };
 
