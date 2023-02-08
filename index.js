@@ -52,22 +52,26 @@ $(function() {
             sTime = "2022/09/25 0:0:0";
         }
         let day1 = new Date(sTime).getTime();
-        let iDays = (nTime.getTime() - day1) / (1000 * 60 * 60 * 24); //天数
-        let iHours = (nTime.getTime() - day1) / (1000 * 60 * 60); //小时数
-        let iMinutes = (nTime.getTime() - day1) / (1000 * 60); //分钟数
+        elapsed_time = nTime.getTime()-day1
+        let iDays = (elapsed_time) / (1000 * 60 * 60 * 24); //天数
+        let iHours = (elapsed_time) / (1000 * 60 * 60); //小时数
+        let iMinutes = (elapsed_time) / (1000 * 60); //分钟数
+        let iSecondes = (elapsed_time) / (1000)
         $("#sTime").html("故事开始于 " + "2022-09-25 21:00:00");
         $("#nTime").html("当前时间: " + formartDate(nTime));
 
-        $("#stop").html("时间仍在流逝，但我们却按下了暂停键")
+        $("#stop").html("时间在流逝，我们仍在继续")
 
-        $("#dDays").html("相爱 " +"暂时停止在第"+ "24天");
-        // $("#dDays").html("相爱 " +"第"+ iDays.toFixed() + "天");
+        // $("#dDays").html("相爱 " +"暂时停止在第"+ "24天");
+        $("#dDays").html("相爱 " +"第"+ iDays.toFixed() + "天");
 
-        $("#dHour").html("相爱 " + "暂时停止在第" + "574小时");
-        // $("#dHour").html("相爱 " + iHours.toFixed() + "小时");
+        // $("#dHour").html("相爱 " + "暂时停止在第" + "574小时");
+        $("#dHour").html("相爱 " + iHours.toFixed() + "小时");
 
-        $("#dMinutes").html("相爱 " + "暂时停止在第" + "34421分钟");
-        // $("#dMinutes").html("相爱 " + iMinutes.toFixed() + "分钟");
+        // $("#dMinutes").html("相爱 " + "暂时停止在第" + "34421分钟");
+        $("#dMinutes").html("相爱 " + iMinutes.toFixed() + "分钟");
+
+        // $("#dSeconds").html("相爱 " + iMinutes.toFixed() + "分钟");
         // return iHours
     };
 
